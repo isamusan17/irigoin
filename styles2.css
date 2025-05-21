@@ -1,0 +1,135 @@
+
+/* Detalles de la novela */
+.novel-detail-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.novel-detail {
+    display: flex;
+    flex-direction: row; /* Mantener la imagen y resumen en dos columnas */
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Bloque izquierdo (imagen y información adicional) */
+.left-block {
+    width: 40%;
+}
+
+.novel-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.novel-additional-info {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.novel-additional-info p {
+    margin: 5px 0;
+}
+
+.novel-additional-info strong {
+    color: #1a73e8;
+}
+
+/* Bloque derecho (resumen) */
+.right-block {
+    width: 60%;
+}
+
+.novel-detail-info h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.novel-detail-info .rating {
+    font-size: 18px;
+    color: #f5a623;
+}
+
+.novel-detail-info .genre {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.novel-detail-info .chapters {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.novel-detail-info .summary {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Botones */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f5a623;
+}
+
+/* Lista de capítulos */
+.chapters-list {
+    text-align: center;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.chapter-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.chapter-block {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 80%;
+    margin: 10px 0;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.chapter-block:hover {
+    background-color: #f5a623;
+    color: white;
+}

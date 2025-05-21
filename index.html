@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIMANnovel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+    <!-- Header con el nombre de la página, buscador y lista de novelas -->
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">IRIMANnovel</a>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar novelas..." onkeyup="filterNovels()">
+                <button>🔍</button>
+            </div>
+            <div class="nav-links">
+                <a href="#">Lista de Novelas</a>
+                <!-- Enlace para abrir los géneros -->
+                <label for="genre-toggle" class="genre-label">Géneros</label>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor de géneros, inicialmente oculto -->
+    <input type="checkbox" id="genre-toggle" class="genre-checkbox">
+    <div class="genres-container">
+        <h2>Géneros</h2>
+        <table class="genres-table">
+            <tr>
+                <td class="accion">Acción</td>
+                <td>Cambio de género</td>
+                <td>Psicológico</td>
+                <td>Un trozo de vida</td>
+            </tr>
+            <tr>
+                <td>Adulto</td>
+                <td>Harén</td>
+                <td>Reencarnación</td>
+                <td>Tizón</td>
+            </tr>
+            <tr>
+                <td class="aventura">Aventura</td>
+                <td>Histórico</td>
+                <td class="romance">Romance</td>
+                <td>Deportes</td>
+            </tr>
+            <tr>
+                <td>Comedia</td>
+                <td>Horror</td>
+                <td>Vida escolar</td>
+                <td class="sobrenatural">Sobrenatural</td>
+            </tr>
+            <tr>
+                <td>Drama</td>
+                <td>Josei</td>
+                <td>Ciencia ficción</td>
+                <td>Tragedia</td>
+            </tr>
+            <tr>
+                <td>Oriental</td>
+                <td>Artes marciales</td>
+                <td>Seinen</td>
+                <td>Wuxia</td>
+            </tr>
+            <tr>
+                <td>Ecchi</td>
+                <td>Maduro</td>
+                <td>Shojo</td>
+                <td>Xianxia</td>
+            </tr>
+            <tr>
+                <td>Fantasía</td>
+                <td>Mecha</td>
+                <td>Shounen Ai</td>
+                <td>Xuanhuan</td>
+            </tr>
+            <tr>
+                <td>Juego</td>
+                <td>Misterio</td>
+                <td>Shounen</td>
+                <td>Yaoi</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Contenedor de las novelas -->
+    <div class="container">
+        <div class="novel-card" data-title="Otros suben de nivel, pero yo sigo con el cultivo!"> 
+            <a href="novela1.html" class="button">
+                <div class="novel-info">
+                    <img src="img/portada1.png" alt="Portada de novela">
+                    <h3>¡Otros suben de nivel, pero yo sigo con el cultivo!</h3>
+                    <p class="rating">⭐⭐⭐⭐☆</p>
+                    <p class="genre">Novela China - Oriental , Fantasía , Acción , Aventura</p>
+                    <p class="chapters">1066 capítulos</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="novel-card" data-title="Destrozaré todo con habilidades pasivas">
+            <a href="novela2.html" class="button">
+                <div class="novel-info">
+                    <img src="img/portada2.png" alt="button">
+                    <h3>Destrozaré todo con habilidades pasivas</h3>
+                    <p class="rating">⭐⭐⭐⭐⭐</p>
+                    <p class="genre">Novela Coreana - Fantasía , Acción , Harén , Reencarnación</p>
+                    <p class="chapters">105 capítulos</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="novel-card" data-title="30 años después de reencarnar, ¡resulta que este mundo era un Rofan!">
+            <img src="img/portada3.png" alt="Portada de novela">
+            <h3>30 años después de reencarnar, ¡resulta que este mundo era un Rofan!</h3>
+            <p class="rating">⭐⭐⭐⭐☆</p>
+            <p class="genre">Novela Coreana - Acción , Aventura , Comedia , Drama , Fantasía , Harén , Artes Marciales , Recuentos de la Vida</p>
+            <p class="chapters">273 capítulos</p>
+        </div>
+
+        <div class="novel-card" data-title="Mi sistema de vampiros">
+            <img src="img/portada4.png" alt="Portada de novela">
+            <h3>Mi sistema de vampiros</h3>
+            <p class="rating">⭐⭐⭐⭐☆</p>
+            <p class="genre">Novela Inglesa - Acción , Fantasía , Misterio</p>
+            <p class="chapters">2551 capítulos</p>
+        </div>
+
+        <div class="novel-card" data-title="Deseo único: El ascenso del Paragón omnisciente">
+            <img src="img/portada5.png" alt="Portada de novela">
+            <h3>Deseo único: El ascenso del Paragón omnisciente</h3>
+            <p class="rating">⭐⭐⭐⭐☆</p>
+            <p class="genre">Novela Inglesa - Fantasía , Romance , Acción , Harén , Comedia , Tragedia</p>
+            <p class="chapters">667 capítulos</p>
+        </div>
+
+        <div class="novel-card" data-title="El primer maestro de bestias legendario">
+            <img src="img/portada6.png" alt="Portada de novela">
+            <h3>El primer maestro de bestias legendario</h3>
+            <p class="rating">⭐⭐⭐⭐☆</p>
+            <p class="genre">Novela Inglesa - Fantasía , Harén , Adultos , Comedia , Acción , Aventura</p>
+            <p class="chapters">946 capítulos</p>
+        </div>
+
+        <div class="novel-card" data-title="El toque mecánico">
+            <img src="img/portada7.png" alt="Portada de novela">
+            <h3>El toque mecánico</h3>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p class="genre">Novela Inglesa - Ciencia ficción , fantasía , aventura , acción</p>
+            <p class="chapters">6923 capítulos</p>
+        </div>
+
+        <div class="novel-card" data-title="El linaje lo es todo">
+            <img src="img/portada8.png" alt="Portada de novela">
+            <h3>El linaje lo es todo</h3>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p class="genre">Novela Coreana - Acción , Aventura , Drama , Fantasía , Artes Marciales</p>
+            <p class="chapters">76 capítulos</p>
+        </div>
+
+        <div class="novel-card" data-title="Me convertí en jefe de incursión">
+            <img src="img/portada9.png" alt="Portada de novela">
+            <h3>Me convertí en jefe de incursión</h3>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p class="genre">Novela Coreana - Acción , Aventura , Drama , Fantasía , Género cambiante , Recuentos de la vida , Sobrenatural</p>
+            <p class="chapters">252 capítulos</p>
+        </div>
+
+        <div class="novel-card" data-title="Arcanista en otro mundo">
+            <img src="img/portada10.png" alt="Portada de novela">
+            <h3>Arcanista en otro mundo</h3>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p class="genre">Novela Inglesa - Fantasía , Acción , Aventura , Misterio , Sobrenatural</p>
+            <p class="chapters">55 capítulos</p>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>Freewebnovel.Com:</p>
+                <p>Lee libros y novelas gratis en línea</p>
+            </div>
+            <div class="footer-right">
+                <a href="#">Contacto - Mapa del sitio</a>
+                <a href="#">Política de privacidad y condiciones de uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

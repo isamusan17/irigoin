@@ -1,0 +1,1 @@
+Es una pagina de lectura de novelas por ahora solo están activas su interfaz de 2 novelas y hay 10 novelas en total, el buscador funciona correctamente, e generado una lista de géneros pero aun no esta activa.
